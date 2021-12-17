@@ -11,6 +11,8 @@ if [[ ${1} == "checkdigests" ]]; then
 elif [[ ${1} == "tests" ]]; then
     echo "List installed packages..."
     docker run --rm --entrypoint="" "${2}" apk -vv info | sort
+    echo "Show help info..."
+    docker run --rm --entrypoint="" "${2}" python3 /app/qbit_manage.py -h
 else
     version=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://api.github.com/repos/StuffAnThings/qbit_manage/releases/latest" | jq -r .tag_name | sed s/v//g)
     [[ -z ${version} ]] && exit 1
