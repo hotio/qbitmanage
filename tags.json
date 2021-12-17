@@ -16,12 +16,12 @@
     },
     {
       "name": "nightly",
-      "version": "1.0.2-beta.8",
-      "commit": "6ca841d",
-      "upstream": "Pre-releases",
-      "lastUpdated": "2021-12-16T14:49:30.280Z"
+      "version": "",
+      "commit": "",
+      "upstream": "",
+      "lastUpdated": ""
     }
   ],
-  "pulls": 12636498,
-  "stars": 17
+  "pulls": 0,
+  "stars": 0
 }
