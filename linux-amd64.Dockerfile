@@ -7,8 +7,7 @@ RUN apk add --no-cache py3-setuptools && \
         qbittorrent-api \
         schedule \
         retrying \
-        alive_progress && \
-    apk del --purge build-dependencies
+        alive_progress
 
 ARG VERSION
 RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/v${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
