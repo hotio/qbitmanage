@@ -14,10 +14,10 @@ elif [[ ${1} == "tests" ]]; then
     echo "Show help info..."
     docker run --rm --entrypoint="" "${2}" python3 /app/qbit_manage.py -h
 else
-    version=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://api.github.com/repos/StuffAnThings/qbit_manage/releases/latest" | jq -r .tag_name | sed s/v//g)
+    version=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://api.github.com/repos/StuffAnThings/qbit_manage/commits/develop" | jq -r .sha)
     [[ -z ${version} ]] && exit 1
     old_version=$(jq -r '.version' < VERSION.json)
     changelog=$(jq -r '.changelog' < VERSION.json)
-    [[ "${old_version}" != "${version}" ]] && changelog="https://github.com/StuffAnThings/qbit_manage/compare/v${old_version}...v${version}"
+    [[ "${old_version}" != "${version}" ]] && changelog="https://github.com/StuffAnThings/qbit_manage/compare/${old_version}...${version}"
     echo '{"version":"'"${version}"'","changelog":"'"${changelog}"'"}' | jq . > VERSION.json
 fi

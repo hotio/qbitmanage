@@ -9,7 +9,7 @@ RUN apk add --no-cache py3-pip && \
         alive_progress
 
 ARG VERSION
-RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/v${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
+RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 COPY root/ /
