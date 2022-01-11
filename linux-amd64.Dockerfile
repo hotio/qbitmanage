@@ -3,7 +3,7 @@ FROM cr.hotio.dev/hotio/base@sha256:a5b4a850b6128d497dd55ea28290133352a80b9992a2
 RUN apk add --no-cache py3-pip && \
     pip3 install --no-cache-dir --upgrade \
         ruamel.yaml \
-        qbittorrent-api=2022.1.27 \
+        qbittorrent-api==2022.1.27 \
         schedule \
         retrying \
         alive_progress
