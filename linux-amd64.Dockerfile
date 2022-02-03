@@ -6,7 +6,7 @@ RUN apk add --no-cache py3-pip && \
         qbittorrent-api>=2022.1.27 \
         schedule \
         retrying \
-        alive_progress
+        alive_progress==2.2.0
 
 ARG VERSION
 RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/v${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
