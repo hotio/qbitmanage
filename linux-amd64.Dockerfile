@@ -1,4 +1,4 @@
-FROM cr.hotio.dev/hotio/base@sha256:4378603cfbdff1f02a33caee3e72e8e43d6236f4ac8461997f5ce142c59b3e4a
+FROM cr.hotio.dev/hotio/base@sha256:91b2ffed92f1c9af992cc6c82b7431cd9cbee120bb3e40aa0a714c63ed82a3dd
 
 ARG VERSION
 RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
