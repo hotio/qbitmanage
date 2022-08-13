@@ -5,11 +5,13 @@ RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/${VERSION}.
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 RUN apk add --no-cache py3-pip && \
+    apk add --no-cache --virtual=build-dependencies gcc && \
     pip3 install --no-cache-dir --upgrade \
         ruamel.yaml \
         qbittorrent-api \
         schedule \
         retrying \
-        alive_progress
+        alive_progress && \
+    apk del --purge build-dependencies
 
 COPY root/ /
