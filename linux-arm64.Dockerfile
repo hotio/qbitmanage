@@ -5,6 +5,7 @@ RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/${VERSION}.
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 RUN apk add --no-cache py3-pip && \
+    apk add --no-cache build-base && \
     apk add --no-cache --virtual=build-dependencies gcc && \
     pip3 install --no-cache-dir --upgrade \
         ruamel.yaml \
