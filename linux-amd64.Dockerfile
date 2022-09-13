@@ -1,4 +1,7 @@
-FROM cr.hotio.dev/hotio/base@sha256:f16b2df0fbefceb0978488fb4a17221819668504b8fd47b675b65e50b074c1c4
+ARG UPSTREAM_IMAGE
+ARG UPSTREAM_DIGEST_AMD64
+
+FROM ${UPSTREAM_IMAGE}@${UPSTREAM_DIGEST_AMD64}
 
 ARG VERSION
 RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
