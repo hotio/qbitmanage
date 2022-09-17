@@ -3,6 +3,8 @@ ARG UPSTREAM_DIGEST_AMD64
 
 FROM ${UPSTREAM_IMAGE}@${UPSTREAM_DIGEST_AMD64}
 
+VOLUME ["${CONFIG_DIR}"]
+
 ARG VERSION
 RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
     chmod -R u=rwX,go=rX "${APP_DIR}"
