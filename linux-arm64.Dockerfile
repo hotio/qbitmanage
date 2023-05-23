@@ -18,7 +18,10 @@ RUN apk add --no-cache py3-pip && \
         qbittorrent-api \
         schedule \
         requests \
-        retrying && \
+        retrying \
+        fastapi
+        python-multipart
+        uvicorn && \
     apk del --purge build-dependencies
 
 COPY root/ /
