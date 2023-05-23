@@ -12,11 +12,13 @@ RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/v${VERSION}
 RUN apk add --no-cache py3-pip && \
     apk add --no-cache --virtual=build-dependencies build-base python3-dev && \
     pip3 install --no-cache-dir --upgrade \
+        bencodepy \
+        GitPython \
         ruamel.yaml \
         qbittorrent-api \
         schedule \
-        retrying \
-        alive_progress && \
+        requests \
+        retrying && \
     apk del --purge build-dependencies
 
 COPY root/ /
