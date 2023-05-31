@@ -1,7 +1,7 @@
 {
   "description": "Every commit to develop",
-  "version": "580351f6d5c7b1b85570db69649cb9ab3639ba91",
-  "changelog": "https://github.com/StuffAnThings/qbit_manage/compare/0c6ebcd316860821053e69d69d38b960310be432...580351f6d5c7b1b85570db69649cb9ab3639ba91",
+  "version": "58ecbcfe2e939f86abc5f5d1e01ecf4b671cee38",
+  "changelog": "https://github.com/StuffAnThings/qbit_manage/compare/580351f6d5c7b1b85570db69649cb9ab3639ba91...58ecbcfe2e939f86abc5f5d1e01ecf4b671cee38",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:c1c852483290d0eea96fe5c1ca4b08d6f2056a7cd0c61459c77edeee9386822f",
