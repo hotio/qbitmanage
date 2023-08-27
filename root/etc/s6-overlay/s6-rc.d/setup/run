@@ -31,3 +31,9 @@ fi
 echo "Applying permissions to ${CONFIG_DIR}"
 chmod "=rwx" "${CONFIG_DIR}"
 chown hotio:hotio "${CONFIG_DIR}"
+
+if [[ ! -f "${CONFIG_DIR}/config.yml" ]]; then
+    echo "Installing default \"config.yml\"..."
+    cp "${APP_DIR}/config/config.yml.sample" "${CONFIG_DIR}/config.yml"
+    chown hotio:hotio -R "${CONFIG_DIR}/config.yml"
+fi
