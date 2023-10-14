@@ -1,8 +1,8 @@
 {
   "latest": true,
   "description": "Releases",
-  "version": "4.0.4",
-  "changelog": "https://github.com/StuffAnThings/qbit_manage/compare/vnotifiarr-bot-764440599066574859...v4.0.4",
+  "version": "4.0.5",
+  "changelog": "https://github.com/StuffAnThings/qbit_manage/compare/v4.0.4...v4.0.5",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:7eb56465879803137e0557977e6d983abb8131a77a6b57efdb24985166aee037",
