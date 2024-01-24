@@ -4,6 +4,6 @@
   "changelog": "https://github.com/StuffAnThings/qbit_manage/compare/937e9e886f2294eb12e158a058f749d980505c4b...29b9399e6f4f418a4be3fbc31ed3ea5040253f9b",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "upstream_digest_amd64": "sha256:e8c549548c101b12abc2fc9399c6c6dc33e5d56603e01f6e3e23fed42d08d54a",
-  "upstream_digest_arm64": "sha256:b4fca2fdedc503aaa5f73aa1483c442d0ba03113bd359a0ab47ed75a33e5bd9b"
+  "upstream_digest_amd64": "sha256:6dc3330cd573de7344957f1ac51c9cda51dae86350a4d961f43024ce70ce6b47",
+  "upstream_digest_arm64": "sha256:41d93c06748276234eae230216cfe9fc8804b70c98d059130a3d6f9facef8e35"
 }
