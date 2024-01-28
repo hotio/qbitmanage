@@ -1,8 +1,8 @@
 {
   "latest": true,
   "description": "Releases",
-  "version": "4.0.7",
-  "changelog": "https://github.com/StuffAnThings/qbit_manage/compare/v4.0.6...v4.0.7",
+  "version": "4.0.8",
+  "changelog": "https://github.com/StuffAnThings/qbit_manage/compare/v4.0.7...v4.0.8",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
   "upstream_digest_amd64": "sha256:a55e205512f89e7851be453c57d4b580a454c0378b8cc7a91244b9b60892a988",
