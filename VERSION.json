@@ -1,7 +1,7 @@
 {
   "description": "Every commit to develop",
-  "version": "7c23870f2e5d8afe55caeb5d82b549e7f48f6dbe",
-  "changelog": "https://github.com/StuffAnThings/qbit_manage/compare/29b9399e6f4f418a4be3fbc31ed3ea5040253f9b...7c23870f2e5d8afe55caeb5d82b549e7f48f6dbe",
+  "version": "4972a7f30811f7a8902b4345cc797cecd05bd5e9",
+  "changelog": "https://github.com/StuffAnThings/qbit_manage/compare/7c23870f2e5d8afe55caeb5d82b549e7f48f6dbe...4972a7f30811f7a8902b4345cc797cecd05bd5e9",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
   "upstream_digest_amd64": "sha256:a55e205512f89e7851be453c57d4b580a454c0378b8cc7a91244b9b60892a988",
