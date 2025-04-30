@@ -3,5 +3,6 @@
 
 umask "${UMASK}"
 
+cd "${CONFIG_DIR}" || exit 1
 # shellcheck disable=SC2086
-exec s6-setuidgid hotio python3 "${APP_DIR}/qbit_manage.py" --config-file "${CONFIG_DIR}/config.yml" --log-file "${CONFIG_DIR}/qbitmanage.log" ${ARGS}
+exec s6-setuidgid hotio python3 "${APP_DIR}/qbit_manage.py" ${ARGS}
