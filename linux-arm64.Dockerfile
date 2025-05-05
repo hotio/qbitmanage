@@ -13,7 +13,7 @@ RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/${VERSION}.
 
 RUN apk add --no-cache py3-pip && \
     apk add --no-cache --virtual=build-dependencies build-base python3-dev && \
-    pip3 install --break-system-packages --no-cache-dir --upgrade --requirement "${APP_DIR}/requirements.txt" && \
+    pip3 install --break-system-packages --no-cache-dir --upgrade "${APP_DIR}" && \
     apk del --purge build-dependencies
 
 COPY root/ /
