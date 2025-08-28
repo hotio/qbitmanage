@@ -7,8 +7,6 @@ ENV IMAGE_STATS=${IMAGE_STATS} QBM_DOCKER=True
 
 ARG VERSION
 RUN curl -fsSL "https://github.com/StuffAnThings/qbit_manage/archive/${VERSION}.tar.gz" | tar xzf - -C "${APP_DIR}" --strip-components=1 && \
-    rm -rf "${APP_DIR}/config" && \
-    ln -sf "${CONFIG_DIR}" "${APP_DIR}/config" && \
     chmod -R u=rwX,go=rX "${APP_DIR}"
 
 RUN apk add --no-cache py3-pip && \
