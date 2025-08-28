@@ -4,5 +4,6 @@
 umask "${UMASK}"
 
 cd "${CONFIG_DIR}" || exit 1
+export XDG_CONFIG_HOME="${CONFIG_DIR}"
 # shellcheck disable=SC2086
 exec s6-setuidgid hotio python3 "${APP_DIR}/qbit_manage.py" ${ARGS}
