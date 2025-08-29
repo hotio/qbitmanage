@@ -3,5 +3,9 @@
 
 umask "${UMASK}"
 
+if [[ -z "${QBT_CONFIG}" ]] && [[ -z "${QBT_CONFIG_DIR}" ]]; then
+    export QBT_CONFIG_DIR="${CONFIG_DIR}"
+fi
+
 # shellcheck disable=SC2086
-exec s6-setuidgid hotio python3 "${APP_DIR}/qbit_manage.py" --config-dir="${CONFIG_DIR}" ${ARGS}
+exec s6-setuidgid hotio python3 "${APP_DIR}/qbit_manage.py" ${ARGS}
