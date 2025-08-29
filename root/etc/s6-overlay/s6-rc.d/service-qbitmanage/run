@@ -3,13 +3,5 @@
 
 umask "${UMASK}"
 
-cd "${CONFIG_DIR}" || exit 1
-
-if [[ -f "${CONFIG_DIR}/config.yml" ]] && [[ -z "${QBT_CONFIG}" ]]; then
-    export QBT_CONFIG="${CONFIG_DIR}/config.yml"
-elif [[ -n "${QBT_CONFIG}" ]] && [[ "${QBT_CONFIG}" == "${QBT_CONFIG#/}" ]]; then
-    export QBT_CONFIG="${CONFIG_DIR}/${QBT_CONFIG}"
-fi
-
 # shellcheck disable=SC2086
-exec s6-setuidgid hotio python3 "${APP_DIR}/qbit_manage.py" ${ARGS}
+exec s6-setuidgid hotio python3 "${APP_DIR}/qbit_manage.py" --config-dir="${CONFIG_DIR}" ${ARGS}
