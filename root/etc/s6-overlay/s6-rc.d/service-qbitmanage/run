@@ -3,6 +3,8 @@
 
 umask "${UMASK}"
 
+cd "${CONFIG_DIR}" || exit 1
+
 if [[ -z "${QBT_CONFIG}" ]] && [[ -z "${QBT_CONFIG_DIR}" ]]; then
     export QBT_CONFIG_DIR="${CONFIG_DIR}"
 fi
