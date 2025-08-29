@@ -5,10 +5,8 @@ umask "${UMASK}"
 
 cd "${CONFIG_DIR}" || exit 1
 
-if [[ -f "${CONFIG_DIR}/config.yml" ]] && [[ -z "${QBT_CONFIG}" ]]; then
-    export QBT_CONFIG="${CONFIG_DIR}/config.yml"
-elif [[ -n "${QBT_CONFIG}" ]] && [[ "${QBT_CONFIG}" == "${QBT_CONFIG#/}" ]]; then
-    export QBT_CONFIG="${CONFIG_DIR}/${QBT_CONFIG}"
+if [[ -z "${QBT_CONFIG}" ]] && [[ -z "${QBT_CONFIG_DIR}" ]]; then
+    export QBT_CONFIG_DIR="${CONFIG_DIR}"
 fi
 
 # shellcheck disable=SC2086
