@@ -14,13 +14,13 @@
   "release": {
     "description": "Releases",
     "hide": false,
-    "last_updated": "2025-11-15T16:52:17.000Z",
-    "last_updated_url": "https://github.com/hotio/qbitmanage/actions/runs/19392729478",
+    "last_updated": "2025-11-29T15:32:35.000Z",
+    "last_updated_url": "https://github.com/hotio/qbitmanage/actions/runs/19785808352",
     "latest": true,
     "tags": [
       "release",
-      "release-4.6.4",
-      "release-dc31bad"
+      "release-4.6.5",
+      "release-36b431d"
     ]
   }
 }
