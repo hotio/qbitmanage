@@ -8,6 +8,15 @@ cd "${CONFIG_DIR}" || exit 1
 if [[ -z "${QBT_CONFIG}" ]] && [[ -z "${QBT_CONFIG_DIR}" ]]; then
     export QBT_CONFIG_DIR="${CONFIG_DIR}"
 fi
+if [[ -z "${QBT_WEB_SERVER}" ]]; then
+    export QBT_WEB_SERVER="true"
+fi
+if [[ -z "${QBT_HOST}" ]]; then
+    export QBT_HOST="0.0.0.0"
+fi
+if [[ -z "${QBT_PORT}" ]]; then
+    export QBT_PORT="${WEBUI_PORTS%%/*}"
+fi
 
 # shellcheck disable=SC2086
 exec s6-setuidgid hotio python3 "${APP_DIR}/qbit_manage.py" ${ARGS}
