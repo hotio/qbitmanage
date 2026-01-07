@@ -18,15 +18,16 @@
   },
   "release": {
     "commit_message": "Upstream image update",
+    "commit_sha": "e16c34519227159bb5a6d055d08ca09e28795a1e",
     "description": "Releases",
     "hide": false,
-    "last_updated": "2026-01-04T09:26:26.000Z",
-    "last_updated_url": "https://github.com/hotio/qbitmanage/actions/runs/20690832479",
+    "last_updated": "2026-01-07T03:57:40.000Z",
+    "last_updated_url": "https://github.com/hotio/qbitmanage/actions/runs/20770103627",
     "latest": true,
     "tags": [
       "release",
       "release-4.6.5",
-      "release-10107ad",
+      "release-e16c345",
       "release-v4",
       "release-v4.6",
       "release-v4.6.5"
