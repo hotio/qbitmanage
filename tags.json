@@ -1,16 +1,16 @@
 {
   "nightly": {
-    "commit_message": "Version update: 73fb96bfbad112e6b4a07c434abf7dfb09c65ba0 => 6aafba4bec8663d73ee63e2431df71256db1aaba",
-    "commit_sha": "da1241d6091565eee82d124325088f78a956e116",
+    "commit_message": "Upstream image update",
+    "commit_sha": "12e17328f548a8397a1d4af13fd5ad95bd568732",
     "description": "Every commit to develop",
     "hide": false,
-    "last_updated": "2026-01-06T22:36:08.000Z",
-    "last_updated_url": "https://github.com/hotio/qbitmanage/actions/runs/20764275936",
+    "last_updated": "2026-01-07T03:57:39.000Z",
+    "last_updated_url": "https://github.com/hotio/qbitmanage/actions/runs/20770103468",
     "latest": false,
     "tags": [
       "nightly",
       "nightly-6aafba4bec8663d73ee63e2431df71256db1aaba",
-      "nightly-da1241d",
+      "nightly-12e1732",
       "",
       "",
       ""
