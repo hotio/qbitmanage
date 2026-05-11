@@ -1,10 +1,11 @@
 {
   "description": "Every commit to develop",
+  "packages_hash": "f668109d58f6e04670049e8157a537bd33e1aa10",
   "test_amd64": true,
   "test_arm64": true,
   "test_url": "http://localhost:8080",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "upstream_tag_sha": "alpinevpn-4ed63ea",
+  "upstream_tag_sha": "alpinevpn-41d94e3",
   "version": "f1be2582a9bf3dd6be1b589591195d864f2a40ac"
 }
