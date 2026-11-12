@@ -7,6 +7,6 @@
   "upstream_tag": "alpinevpn",
   "upstream_tag_sha": "alpinevpn-3e58ab0",
   "upstream_tag_sha__command": "json=$(cat meta.json) && upstream_image=$(jq -re '.upstream_image' <<< \"${json}\") && upstream_image_base=$(basename \"${upstream_image}\") && upstream_tag=$(jq -re '.upstream_tag' <<< \"${json}\") && tags_json=$(curl -fsSL ${GITHUB_TOKEN:+--header \"Authorization: Bearer ${GITHUB_TOKEN}\"} \"https://hotio.dev/containers/${upstream_image_base}-tags.json\") && commit_sha=$(jq -r --arg tag \"${upstream_tag}\" '.[$tag].commit_sha' <<< \"${tags_json}\") && upstream_tag_sha=${upstream_tag}-${commit_sha:0:7} && echo \"${upstream_tag_sha}\"",
-  "version": "c9a567f194862e5e734bc835bb38402a520f0cd1",
+  "version": "7e860df166b5b80f5930fb2f6f3f2aa573219cf4",
   "version__command": "curl -fsSL ${GITHUB_TOKEN:+--header \"Authorization: Bearer ${GITHUB_TOKEN}\"} \"https://api.github.com/repos/StuffAnThings/qbit_manage/commits/develop\" | jq -re '.sha'"
 }
